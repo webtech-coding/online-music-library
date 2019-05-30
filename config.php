@@ -1,0 +1,9 @@
+<?php
+    define('SERVER','localhost');
+    define('USERNAME','root');
+    define('PASSWORD','');
+    define('DB_NAME','music');
+    define('ROOT','Applications/XAMPP/htdocs/music');
+    define('UPLOADS','app/storage/uploads');
+    define('SECRET',PASSWORD_BCRYPT);
+?>

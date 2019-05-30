@@ -1,0 +1,12 @@
+<?php
+    include('config.php');
+    include('app/helpers.php');
+    include('app/database/Connection.php');
+    include('app/database/Model.php');
+    include('app/core/Artist.php');
+    include('app/core/Album.php');
+    include('app/core/Auth.php');
+    include('app/core/Song.php');
+    include('app/core/Session.php');
+    include('app/core/Genre.php');
+?>

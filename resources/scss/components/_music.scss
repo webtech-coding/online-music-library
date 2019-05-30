@@ -1,0 +1,94 @@
+.music{
+    display: flex;
+
+    &__artist{
+        display: block;
+    }
+    
+    &__banner{
+        margin-right: rem(100px);
+        width: rem(350px);
+
+        &--artist{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            margin: 0 auto;
+            
+            .music__banner--detail{
+                width: 50%;
+                text-align: left;
+                padding-left: rem(50px);               
+            }
+
+            .music__description p, .music__banner-title, .music__banner-artist,.music__banner-button{
+                text-align: left !important;
+            }
+
+            .music__banner-title{
+                text-align: left;
+            }
+        }
+        &-img{
+            width: rem(350px);
+            display: block;
+        }
+        &-artist{
+            font-size: rem(14px);
+            font-family: $f-primary;
+            text-align: center;
+            padding: rem(8px) 0px;
+            color: rgb(214, 214, 214);
+        }
+        &-title{
+            font-family: $f-primary;
+            text-align: center;
+            margin-top: rem(10px);
+            color: #fff;
+            text-transform: capitalize;
+            font-size: rem(22px);
+        }
+        &-total{
+            text-transform: uppercase;
+        }
+        &-button{
+            text-align: center;
+            margin: rem(20px) 0px;
+        }
+
+        &--btn{
+            padding:rem(10px) rem(20px);
+            border-radius: 30px;
+            background: #303641;
+            color: #fff;
+        }
+    }
+    &__lists{
+        flex-grow: 1;
+
+        &--artist{
+            width: rem(500px);
+            margin: rem(50px) auto;
+            margin-top: 10px;
+
+            .song__list{
+                &:hover{
+                    background: rgba(#000,.2);
+                    background: #343a40;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__description p{
+        color: #fff;
+        text-transform: capitalize;
+        font-size: rem(14px);
+        text-align: center;
+        font-family: $f-primary;
+    }
+
+    
+}

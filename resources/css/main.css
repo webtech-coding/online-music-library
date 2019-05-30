@@ -1,0 +1,779 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,600|Courgette");
+/* line 1, resources/scss/base/_base.scss */
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: inherit; }
+
+/* line 10, resources/scss/base/_base.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 13, resources/scss/base/_base.scss */
+body {
+  background: #fff; }
+
+/* line 16, resources/scss/base/_base.scss */
+ul > li {
+  list-style: none; }
+
+/* line 19, resources/scss/base/_base.scss */
+a {
+  text-decoration: none; }
+
+/* line 22, resources/scss/base/_base.scss */
+button {
+  cursor: pointer;
+  outline: none; }
+
+/* line 27, resources/scss/base/_base.scss */
+textarea:focus, input:focus {
+  outline: 0; }
+
+/* line 1, resources/scss/layouts/_home.scss */
+.home {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../img/music_bg.jpg");
+  background-size: cover;
+  background-position: top;
+  color: #e7e7e7; }
+  /* line 11, resources/scss/layouts/_home.scss */
+  .home__picture {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    position: absolute;
+    width: 80%;
+    right: 5%;
+    height: 100%; }
+  /* line 22, resources/scss/layouts/_home.scss */
+  .home__cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  /* line 32, resources/scss/layouts/_home.scss */
+  .home__heading-title {
+    font-family: "Courgette", cursive;
+    font-size: 5rem;
+    font-weight: 100; }
+  /* line 39, resources/scss/layouts/_home.scss */
+  .home__sub-heading {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.5rem;
+    font-family: "Roboto", sans-serif; }
+  /* line 50, resources/scss/layouts/_home.scss */
+  .home__button {
+    outline: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 5px;
+    margin-top: 1.25rem;
+    background: #239aea;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    display: inline-block; }
+
+/* line 1, resources/scss/layouts/_form.scss */
+.login {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, rgba(226, 247, 236, 0.8), rgba(255, 255, 255, 0.1));
+  font-family: "Roboto", sans-serif; }
+  /* line 8, resources/scss/layouts/_form.scss */
+  .login__error {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+    color: red;
+    letter-spacing: 1px;
+    font-weight: 100; }
+  /* line 17, resources/scss/layouts/_form.scss */
+  .login__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    border: 1px solid rgba(61, 61, 61, 0.2);
+    padding: 3.125rem; }
+    /* line 26, resources/scss/layouts/_form.scss */
+    .login__form-control {
+      display: block;
+      padding: 0.625rem 0; }
+    /* line 31, resources/scss/layouts/_form.scss */
+    .login__form-label {
+      display: block;
+      color: #2e2e2e;
+      font-weight: 100;
+      font-size: 0.875rem;
+      margin-bottom: 0.125rem; }
+    /* line 39, resources/scss/layouts/_form.scss */
+    .login__form-input {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 0.3125rem;
+      width: 100%; }
+    /* line 45, resources/scss/layouts/_form.scss */
+    .login__form-title {
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 0.3125rem;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 1.25rem; }
+    /* line 54, resources/scss/layouts/_form.scss */
+    .login__form-submit {
+      outline: none;
+      padding: 0.625rem 1.25rem;
+      border-radius: 5px;
+      margin-top: 1.25rem;
+      background: #239aea;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      display: inline-block; }
+
+/* line 1, resources/scss/layouts/_sidebar.scss */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  height: calc(100vh - 60px);
+  background: #343a40;
+  color: #fff;
+  width: 11.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100; }
+  /* line 13, resources/scss/layouts/_sidebar.scss */
+  .sidebar__items {
+    padding-top: 1.875rem; }
+  /* line 16, resources/scss/layouts/_sidebar.scss */
+  .sidebar__item {
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    cursor: pointer; }
+    /* line 21, resources/scss/layouts/_sidebar.scss */
+    .sidebar__item:not(:first-of-type) {
+      padding-top: 1.25rem; }
+      /* line 24, resources/scss/layouts/_sidebar.scss */
+      .sidebar__item:not(:first-of-type):hover {
+        transition: padding .4s linear;
+        padding-left: 2.1875rem; }
+    /* line 30, resources/scss/layouts/_sidebar.scss */
+    .sidebar__item--dashboard {
+      border-bottom: 1px solid #a1a1a1;
+      padding-bottom: 0.625rem; }
+    /* line 35, resources/scss/layouts/_sidebar.scss */
+    .sidebar__item-link {
+      color: #fff; }
+
+/* line 3, resources/scss/layouts/_dashboard.scss */
+.dashboard__content {
+  padding-left: 15.625rem;
+  padding-top: 7.5rem;
+  min-height: 100vh;
+  padding-right: 7.5rem; }
+
+/* line 10, resources/scss/layouts/_dashboard.scss */
+.dashboard__card {
+  text-align: center;
+  padding-top: 1.875rem; }
+
+/* line 14, resources/scss/layouts/_dashboard.scss */
+.dashboard__icon {
+  font-size: 3.125rem !important;
+  color: rgba(0, 0, 0, 0.6); }
+
+/* line 18, resources/scss/layouts/_dashboard.scss */
+.dashboard__number {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.875rem;
+  background: #ffc107;
+  color: #fff; }
+  /* line 27, resources/scss/layouts/_dashboard.scss */
+  .dashboard__number--blue {
+    background: #17a2b8; }
+  /* line 30, resources/scss/layouts/_dashboard.scss */
+  .dashboard__number--red {
+    background: #dc3545; }
+  /* line 33, resources/scss/layouts/_dashboard.scss */
+  .dashboard__number--green {
+    background: #28a745; }
+
+/* line 38, resources/scss/layouts/_dashboard.scss */
+.dashboard__title {
+  padding-top: 1.25rem;
+  font-weight: 600; }
+
+/* line 43, resources/scss/layouts/_dashboard.scss */
+.dashboard__header {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 1.25rem; }
+
+/* line 50, resources/scss/layouts/_dashboard.scss */
+.dashboard__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.25rem; }
+
+/* line 57, resources/scss/layouts/_dashboard.scss */
+.dashboard__form {
+  padding: 1.5625rem 0; }
+  /* line 60, resources/scss/layouts/_dashboard.scss */
+  .dashboard__form-control {
+    padding: 0.625rem 0px; }
+    /* line 63, resources/scss/layouts/_dashboard.scss */
+    .dashboard__form-control--hidden {
+      display: none; }
+  /* line 67, resources/scss/layouts/_dashboard.scss */
+  .dashboard__form-label {
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: 0.125rem; }
+  /* line 72, resources/scss/layouts/_dashboard.scss */
+  .dashboard__form-input {
+    border: 1px solid #949494;
+    padding: 0.3125rem 0.3125rem;
+    width: 37.5rem;
+    border-radius: 0.125rem;
+    height: 1.875rem; }
+  /* line 79, resources/scss/layouts/_dashboard.scss */
+  .dashboard__form-submit {
+    padding: 0.625rem 1.25rem;
+    color: #fff;
+    background: #343a40;
+    text-transform: uppercase; }
+  /* line 85, resources/scss/layouts/_dashboard.scss */
+  .dashboard__form-select {
+    width: 37.5rem;
+    height: 1.875rem;
+    border: 1px solid #949494;
+    outline: none;
+    border-radius: none; }
+  /* line 92, resources/scss/layouts/_dashboard.scss */
+  .dashboard__form-button {
+    padding: 0.625rem 1.25rem;
+    color: #fff;
+    background: #343a40;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+    cursor: pointer; }
+
+/* line 105, resources/scss/layouts/_dashboard.scss */
+.dashboard__success-msg {
+  background: green;
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  margin-top: 1.25rem;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem; }
+
+/* line 115, resources/scss/layouts/_dashboard.scss */
+.dashboard__artists {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.625rem; }
+
+/* line 124, resources/scss/layouts/_dashboard.scss */
+.dashboard__artist {
+  padding-bottom: 1.25rem;
+  border: 1px solid rgba(148, 148, 148, 0.4);
+  cursor: pointer; }
+  /* line 128, resources/scss/layouts/_dashboard.scss */
+  .dashboard__artist-img {
+    width: 100%; }
+  /* line 132, resources/scss/layouts/_dashboard.scss */
+  .dashboard__artist-name {
+    text-align: center;
+    padding-top: 0.625rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #000 !important; }
+  /* line 140, resources/scss/layouts/_dashboard.scss */
+  .dashboard__artist-country {
+    text-align: center;
+    padding: 0.125rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.625rem;
+    color: #000 !important; }
+
+/* line 148, resources/scss/layouts/_dashboard.scss */
+.dashboard__single {
+  display: flex;
+  margin: 1.875rem 0px; }
+  /* line 153, resources/scss/layouts/_dashboard.scss */
+  .dashboard__single-avatar {
+    padding-right: 3.125rem; }
+    /* line 156, resources/scss/layouts/_dashboard.scss */
+    .dashboard__single-avatar--album {
+      width: 12.5rem; }
+  /* line 164, resources/scss/layouts/_dashboard.scss */
+  .dashboard__single-img--album {
+    width: 100%; }
+  /* line 170, resources/scss/layouts/_dashboard.scss */
+  .dashboard__single-description {
+    width: 100%; }
+  /* line 174, resources/scss/layouts/_dashboard.scss */
+  .dashboard__single-name {
+    text-transform: uppercase;
+    margin-bottom: 0.625rem; }
+  /* line 178, resources/scss/layouts/_dashboard.scss */
+  .dashboard__single-country {
+    margin-bottom: 0.625rem; }
+  /* line 182, resources/scss/layouts/_dashboard.scss */
+  .dashboard__single-profile {
+    padding-top: 0.625rem;
+    font-family: "Roboto", sans-serif;
+    color: #3b3b3b; }
+  /* line 189, resources/scss/layouts/_dashboard.scss */
+  .dashboard__single-album {
+    padding-bottom: 0.625rem;
+    border-bottom: 1px solid rgba(122, 122, 122, 0.8);
+    line-height: 20px;
+    font-size: 0.875rem; }
+
+/* line 196, resources/scss/layouts/_dashboard.scss */
+.dashboard__span {
+  background: #239aea;
+  padding: 0.3125rem;
+  font-size: 0.5rem;
+  color: #fff;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  margin-right: 0.625rem; }
+
+/* line 207, resources/scss/layouts/_dashboard.scss */
+.dashboard__music {
+  display: flex;
+  margin-top: 1.875rem; }
+  /* line 211, resources/scss/layouts/_dashboard.scss */
+  .dashboard__music-img {
+    height: 150px;
+    overflow: hidden; }
+    /* line 214, resources/scss/layouts/_dashboard.scss */
+    .dashboard__music-img img {
+      width: 12.5rem; }
+  /* line 220, resources/scss/layouts/_dashboard.scss */
+  .dashboard__music-description {
+    padding-left: 1.875rem; }
+    /* line 223, resources/scss/layouts/_dashboard.scss */
+    .dashboard__music-description h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1rem; }
+    /* line 231, resources/scss/layouts/_dashboard.scss */
+    .dashboard__music-description p {
+      margin: 0.3125rem 0px; }
+    /* line 235, resources/scss/layouts/_dashboard.scss */
+    .dashboard__music-description--brand {
+      background: #239aea;
+      padding: 0.3125rem;
+      font-size: 0.5rem;
+      color: #fff;
+      letter-spacing: 0.0625rem;
+      text-transform: uppercase;
+      margin-right: 0.625rem; }
+
+/* line 248, resources/scss/layouts/_dashboard.scss */
+.dashboard__music--icon {
+  font-size: 0.75rem;
+  margin-right: 1.25rem; }
+
+/* line 253, resources/scss/layouts/_dashboard.scss */
+.dashboard__table {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 1.25rem 0px; }
+  /* line 258, resources/scss/layouts/_dashboard.scss */
+  .dashboard__table-row {
+    cursor: pointer;
+    border-bottom: 1px solid red;
+    text-transform: uppercase;
+    font-size: 0.625rem; }
+    /* line 263, resources/scss/layouts/_dashboard.scss */
+    .dashboard__table-row:nth-child(even) {
+      background-color: #eeeeee; }
+    /* line 266, resources/scss/layouts/_dashboard.scss */
+    .dashboard__table-row:nth-child(odd) {
+      background-color: #cee1ee; }
+    /* line 270, resources/scss/layouts/_dashboard.scss */
+    .dashboard__table-row:hover {
+      background: #343a40;
+      color: #fff; }
+  /* line 275, resources/scss/layouts/_dashboard.scss */
+  .dashboard__table-data {
+    padding: 0.9375rem; }
+
+/* line 282, resources/scss/layouts/_dashboard.scss */
+#submit-music {
+  display: none; }
+
+/* line 286, resources/scss/layouts/_dashboard.scss */
+#cke_profile {
+  width: 37.5rem; }
+
+/* line 1, resources/scss/layouts/_genre.scss */
+.genre {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 1.5625rem 1.25rem;
+  margin: 3.125rem auto;
+  width: 80%;
+  text-align: center; }
+  /* line 10, resources/scss/layouts/_genre.scss */
+  .genre__item {
+    cursor: pointer;
+    height: 18.75rem; }
+  /* line 16, resources/scss/layouts/_genre.scss */
+  .genre__img {
+    display: block; }
+  /* line 19, resources/scss/layouts/_genre.scss */
+  .genre__name {
+    text-align: center !important;
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    word-spacing: 0.3125rem; }
+  /* line 29, resources/scss/layouts/_genre.scss */
+  .genre__title {
+    margin: 2.1875rem 0px;
+    color: #fff;
+    text-transform: uppercase; }
+  /* line 35, resources/scss/layouts/_genre.scss */
+  .genre__seperator {
+    height: 4px !important;
+    width: 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    margin: 0px 0.5rem;
+    position: relative; }
+
+/* line 46, resources/scss/layouts/_genre.scss */
+.main-content-inner {
+  margin: 0 auto !important;
+  background-image: linear-gradient(to right bottom, rgba(236, 30, 30, 0.7), #472800);
+  min-height: 100vh; }
+
+/* line 52, resources/scss/layouts/_genre.scss */
+.add-music {
+  background: rgba(231, 231, 231, 0.8);
+  padding-bottom: 1.875rem;
+  margin-left: 0.0625rem;
+  margin-right: 0.0625rem;
+  margin-top: 0.625rem; }
+
+/* line 1, resources/scss/components/_header.scss */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  background: #239aea; }
+  /* line 8, resources/scss/components/_header.scss */
+  .header__container {
+    width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center; }
+  /* line 17, resources/scss/components/_header.scss */
+  .header__icon {
+    height: 40px; }
+  /* line 22, resources/scss/components/_header.scss */
+  .header__label {
+    font-size: 1.125rem; }
+  /* line 26, resources/scss/components/_header.scss */
+  .header__button {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    padding: 0.3125rem 0.625rem;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 1px; }
+    /* line 34, resources/scss/components/_header.scss */
+    .header__button--logout {
+      color: #000; }
+
+/* line 1, resources/scss/components/_footer.scss */
+.footer {
+  text-align: center;
+  padding: 1.5625rem 0; }
+
+/* line 1, resources/scss/components/_song.scss */
+.song {
+  margin-left: 1.25rem; }
+  /* line 4, resources/scss/components/_song.scss */
+  .song__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 20px;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 0.3125rem; }
+    /* line 13, resources/scss/components/_song.scss */
+    .song__list:hover {
+      background: rgba(0, 0, 0, 0.2);
+      background: #343a40;
+      color: #fff; }
+    /* line 19, resources/scss/components/_song.scss */
+    .song__list:hover .song__list-name {
+      color: #fff; }
+    /* line 23, resources/scss/components/_song.scss */
+    .song__list:hover .song__list-dots {
+      display: block; }
+    /* line 28, resources/scss/components/_song.scss */
+    .song__list-icon {
+      margin-right: 0.9375rem;
+      color: rgba(255, 255, 255, 0.8); }
+    /* line 33, resources/scss/components/_song.scss */
+    .song__list-name {
+      font-weight: 400;
+      font-size: 0.8125rem;
+      color: #1b1b1b;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif; }
+    /* line 40, resources/scss/components/_song.scss */
+    .song__list-menu {
+      display: flex;
+      justify-content: space-around;
+      color: rgba(255, 255, 255, 0.8); }
+    /* line 47, resources/scss/components/_song.scss */
+    .song__list-dots {
+      position: relative;
+      margin-top: -0.1875rem;
+      margin-right: 1.25rem;
+      cursor: pointer;
+      display: none; }
+    /* line 55, resources/scss/components/_song.scss */
+    .song__list--active {
+      transition: all .4s ease;
+      background: #8e3f3f; }
+  /* line 61, resources/scss/components/_song.scss */
+  .song__detail {
+    margin-left: 2rem;
+    color: rgba(0, 0, 0, 0.6); }
+  /* line 66, resources/scss/components/_song.scss */
+  .song__artist, .song__album {
+    font-size: 0.875rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif; }
+    /* line 71, resources/scss/components/_song.scss */
+    .song__artist:hover, .song__album:hover {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+      padding-bottom: 0.3125rem; }
+
+/* line 1, resources/scss/components/_music.scss */
+.music {
+  display: flex; }
+  /* line 4, resources/scss/components/_music.scss */
+  .music__artist {
+    display: block; }
+  /* line 8, resources/scss/components/_music.scss */
+  .music__banner {
+    margin-right: 6.25rem;
+    width: 21.875rem; }
+    /* line 12, resources/scss/components/_music.scss */
+    .music__banner--artist {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      margin: 0 auto; }
+      /* line 19, resources/scss/components/_music.scss */
+      .music__banner--artist .music__banner--detail {
+        width: 50%;
+        text-align: left;
+        padding-left: 3.125rem; }
+      /* line 25, resources/scss/components/_music.scss */
+      .music__banner--artist .music__description p, .music__banner--artist .music__banner-title, .music__banner--artist .music__banner-artist, .music__banner--artist .music__banner-button {
+        text-align: left !important; }
+      /* line 29, resources/scss/components/_music.scss */
+      .music__banner--artist .music__banner-title {
+        text-align: left; }
+    /* line 33, resources/scss/components/_music.scss */
+    .music__banner-img {
+      width: 21.875rem;
+      display: block; }
+    /* line 37, resources/scss/components/_music.scss */
+    .music__banner-artist {
+      font-size: 0.875rem;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      padding: 0.5rem 0px;
+      color: #d6d6d6; }
+    /* line 44, resources/scss/components/_music.scss */
+    .music__banner-title {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      margin-top: 0.625rem;
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 1.375rem; }
+    /* line 52, resources/scss/components/_music.scss */
+    .music__banner-total {
+      text-transform: uppercase; }
+    /* line 55, resources/scss/components/_music.scss */
+    .music__banner-button {
+      text-align: center;
+      margin: 1.25rem 0px; }
+    /* line 60, resources/scss/components/_music.scss */
+    .music__banner--btn {
+      padding: 0.625rem 1.25rem;
+      border-radius: 30px;
+      background: #303641;
+      color: #fff; }
+  /* line 67, resources/scss/components/_music.scss */
+  .music__lists {
+    flex-grow: 1; }
+    /* line 70, resources/scss/components/_music.scss */
+    .music__lists--artist {
+      width: 31.25rem;
+      margin: 3.125rem auto;
+      margin-top: 10px; }
+      /* line 76, resources/scss/components/_music.scss */
+      .music__lists--artist .song__list:hover {
+        background: rgba(0, 0, 0, 0.2);
+        background: #343a40;
+        color: #fff; }
+  /* line 85, resources/scss/components/_music.scss */
+  .music__description p {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif; }
+
+/* line 1, resources/scss/components/_player.scss */
+.player {
+  background: #212b3a;
+  color: #fff;
+  height: 7.5rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw; }
+  /* line 11, resources/scss/components/_player.scss */
+  .player__controller {
+    padding: 1.25rem;
+    text-align: center; }
+  /* line 15, resources/scss/components/_player.scss */
+  .player__play {
+    height: 1.25rem;
+    width: 1.25rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 0.3125rem;
+    cursor: pointer; }
+  /* line 23, resources/scss/components/_player.scss */
+  .player__top {
+    margin-bottom: 1.875rem; }
+  /* line 28, resources/scss/components/_player.scss */
+  .player__button {
+    margin: 0 0.625rem;
+    font-size: 1.125rem;
+    cursor: pointer; }
+  /* line 37, resources/scss/components/_player.scss */
+  .player__range {
+    -webkit-appearance: none;
+    width: 31.25rem;
+    height: 0.1875rem;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer; }
+    /* line 45, resources/scss/components/_player.scss */
+    .player__range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      /* Override default look */
+      appearance: none;
+      width: 12px;
+      /* Set a specific slider handle width */
+      height: 12px;
+      /* Slider handle height */
+      border-radius: 50%;
+      background: #fff;
+      /* Green background */
+      cursor: pointer;
+      /* Cursor on hover */
+      transition: all .1s ease; }
+      /* line 55, resources/scss/components/_player.scss */
+      .player__range::-webkit-slider-thumb:hover {
+        display: block;
+        height: 15px;
+        width: 15px; }
+  /* line 64, resources/scss/components/_player.scss */
+  .player__volume-range {
+    -webkit-appearance: none;
+    width: 7.5rem;
+    height: 0.125rem;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 5px;
+    display: inline-block;
+    background: #e6e6e6; }
+    /* line 77, resources/scss/components/_player.scss */
+    .player__volume-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      /* Override default look */
+      appearance: none;
+      width: 10px;
+      /* Set a specific slider handle width */
+      height: 10px;
+      /* Slider handle height */
+      border-radius: 50%;
+      background: #cccccc;
+      /* Green background */
+      cursor: pointer;
+      /* Cursor on hover */
+      transition: all .1s ease; }
+      /* line 87, resources/scss/components/_player.scss */
+      .player__volume-range::-webkit-slider-thumb:hover {
+        display: block;
+        height: 15px;
+        width: 15px; }
+  /* line 95, resources/scss/components/_player.scss */
+  .player__timer {
+    display: inline-block;
+    position: absolute;
+    margin-top: 4px;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600; }
+    /* line 102, resources/scss/components/_player.scss */
+    .player__timer-min {
+      margin-left: -30px; }
+    /* line 105, resources/scss/components/_player.scss */
+    .player__timer-max {
+      margin-left: 10px; }

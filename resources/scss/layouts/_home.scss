@@ -1,0 +1,62 @@
+.home{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../img/music_bg.jpg');
+    background-size: cover;
+    background-position: top;
+    color: rgb(231, 231, 231);
+
+    &__picture{
+       //background-image: url('../img/head_phone.png');
+        background-repeat: no-repeat;
+        background-size: contain;        
+        background-position: right;
+        position: absolute;
+        width: 80%;
+        right: 5%;
+        height: 100%;
+    }
+
+    &__cover{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);   
+        text-align: center;
+    }
+
+    &__heading{
+
+        &-title{
+            font-family: $f-secondary;
+            font-size:rem(80px); 
+            font-weight: 100;
+        }
+    }
+
+    &__sub-heading{
+        width: 80%;
+        margin: 0 auto;
+        font-size: rem(20px);
+        letter-spacing: 1px;
+        font-weight: 100;
+        text-align: center;
+        line-height: rem(24px);
+        font-family: $f-primary;
+    }
+
+    &__button{
+        outline: none;
+        padding: rem(10px) rem(20px); 
+        border-radius: 5px;
+        margin-top: rem(20px);
+        background: #239aea;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: rem(14px);
+        display: inline-block;
+    }
+}
+

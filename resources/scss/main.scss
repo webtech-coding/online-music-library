@@ -1,0 +1,18 @@
+@import "abstract/variables";
+@import "abstract/functions";
+
+@import "base/base";
+
+@import "layouts/home";
+@import "layouts/form";
+@import "layouts/sidebar";
+@import "layouts/dashboard";
+@import "layouts/genre";
+
+@import "components/header";
+@import "components/footer";
+@import "components/song";
+@import "components/music";
+@import "components/player";
+
+

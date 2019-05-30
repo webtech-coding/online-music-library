@@ -1,0 +1,42 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    top:60px;
+    height: calc(100vh - 60px);
+    background: #343a40; 
+    color:#fff;
+    width: rem(180px);
+    font-family: $f-primary;
+    font-weight: 100;
+    
+    
+    &__items{
+        padding-top: rem(30px);
+    }
+    &__item{
+        padding:0 rem(20px);
+        font-size: rem(14px);
+        cursor: pointer;
+        
+        &:not(:first-of-type){
+            padding-top: rem(20px);
+
+            &:hover{
+                transition: padding .4s linear;
+                padding-left:rem(35px);
+            }
+        }
+        
+        &--dashboard{
+            border-bottom: 1px solid rgb(161, 161, 161);
+            padding-bottom: rem(10px);
+        }
+
+        &-link{
+            color: #fff;
+            
+        }
+    }
+
+   
+}

@@ -1,0 +1,288 @@
+.dashboard{    
+
+    &__content{
+        padding-left: rem(250px);
+        padding-top: rem(120px);        
+        min-height: 100vh;
+        padding-right: rem(120px);
+    } 
+
+    &__card{
+        text-align: center;
+        padding-top: rem(30px);
+    }
+    &__icon{
+        font-size: rem(50px) !important;
+        color: rgba(#000,.6);
+    }
+    &__number{
+        font-size: rem(20px);
+        font-weight: 600;
+        margin-top: rem(20px);
+        padding-top: rem(20px);
+        padding-bottom: rem(30px);
+        background: #ffc107;
+        color: #fff;
+
+        &--blue{
+            background: #17a2b8;
+        }
+        &--red{
+            background: #dc3545;
+        }
+        &--green{
+            background: #28a745;
+        }
+    }
+
+    &__title{
+        padding-top: rem(20px);
+        font-weight: 600;
+    }
+
+    &__header{
+        text-transform: uppercase;
+        font-weight: 600;
+        color: rgba(#000,.6);
+        margin-top: rem(20px);
+    }
+
+    &__title{
+        font-family: $f-primary;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: rem(20px);
+    }
+
+    &__form{
+        padding: rem(25px) 0;
+
+        &-control{
+            padding:rem(10px) 0px;
+
+            &--hidden{
+                display: none;
+            }
+        }
+        &-label{
+            display: block;
+            font-size: rem(14px);
+            margin-bottom: rem(2px);
+        }
+        &-input{
+            border: 1px solid rgb(148, 148, 148);
+            padding: rem(5px) rem(5px);
+            width: rem(600px);
+            border-radius: rem(2px);
+            height: rem(30px);
+        }
+        &-submit{
+            padding:rem(10px) rem(20px);
+            color:#fff;
+            background: #343a40;
+            text-transform: uppercase; 
+        } 
+        &-select{
+            width: rem(600px);
+            height: rem(30px);
+            border: 1px solid rgb(148, 148, 148);
+            outline: none;
+            border-radius: none;
+        }
+        &-button{
+            padding:rem(10px) rem(20px);
+            color:#fff;
+            background: #343a40;
+            text-transform: uppercase; 
+            font-size: rem(10px);
+            letter-spacing: 1px;
+            cursor: pointer;
+
+        }
+              
+    }
+
+    &__success-msg{
+        background: green;
+        display: inline-block;
+        padding: rem(10px) rem(20px);
+        margin-top: rem(20px);
+        color: #fff;
+        font-family: $f-primary;
+        font-size: rem(14px);
+    }
+
+    &__artists{
+        margin-top: rem(20px);
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap: rem(10px);
+
+        
+    }
+
+    &__artist{
+        padding-bottom: rem(20px);
+        border: 1px solid rgba(148, 148, 148,.4);
+        cursor: pointer;
+        &-img{
+            width: 100%;
+        }
+
+        &-name{
+            text-align: center;
+            padding-top: rem(10px);
+            font-family: $f-primary;
+            font-size: rem(14px);
+            text-transform: uppercase;
+            color: #000 !important;
+        }
+        &-country{
+            text-align: center;
+            padding: rem(2px);
+            font-family: $f-primary;
+            font-size: rem(10px);
+            color: #000 !important;
+        }
+    }
+    &__single{
+        display: flex;
+        margin: rem(30px) 0px;
+        
+
+        &-avatar{
+            padding-right: rem(50px);
+
+            &--album{
+                width: rem(200px);
+
+            }
+        }
+
+        &-img{
+
+            &--album{
+                width: 100%;
+            }
+            
+        }
+
+        &-description{
+            width: 100%;
+        }
+        
+        &-name{
+            text-transform: uppercase;
+            margin-bottom: rem(10px);
+        }
+        &-country{
+            margin-bottom: rem(10px);
+        }
+
+        &-profile{
+            padding-top: rem(10px);
+            font-family: $f-primary;
+            color: rgb(59, 59, 59);
+
+        }
+
+        &-album{
+            padding-bottom: rem(10px);
+            border-bottom: 1px solid rgba(122, 122, 122, 0.8);
+            line-height: 20px;
+            font-size: rem(14px);
+        }
+    }
+    &__span{
+        background: #239aea; 
+        padding:rem(5px);
+        font-size: rem(8px);
+        color:#fff;
+        letter-spacing: rem(1px);
+        text-transform: uppercase;
+        margin-right: rem(10px);
+        
+    }
+
+    &__music{
+        display: flex;
+        margin-top: rem(30px);
+       
+        &-img{
+            height: 150px;
+            overflow: hidden;
+            img{
+                width:rem(200px);
+
+            }
+        }
+
+        &-description{
+            padding-left: rem(30px);
+            
+            h2{
+                font-family: $f-primary;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: rem(16px);
+
+            }
+
+            p{
+                margin: rem(5px) 0px;
+            }
+
+            &--brand{
+                background: #239aea; 
+                padding:rem(5px);
+                font-size: rem(8px);
+                color:#fff;
+                letter-spacing: rem(1px);
+                text-transform: uppercase;
+                margin-right: rem(10px);
+            }
+        }
+    }
+
+    &__music{
+        &--icon{
+            font-size: rem(12px);
+            margin-right: rem(20px);
+        }
+    }
+    &__table{
+        font-family: $f-primary;
+        width: 100%;
+        
+        padding: rem(20px) 0px;
+        &-row{
+            cursor: pointer;
+            border-bottom: 1px solid red;
+            text-transform: uppercase;
+            font-size: rem(10px);
+            &:nth-child(even){
+                background-color: #eeeeee;
+            }
+            &:nth-child(odd){
+                background-color: #cee1ee; 
+            }
+           
+            &:hover{
+                background: #343a40;
+                color: #fff;
+            }
+        }
+        &-data{
+            padding: rem(15px);
+        }
+    }
+    
+}
+
+#submit-music{
+    display: none;
+}
+
+#cke_profile{
+    width: rem(600px);
+}

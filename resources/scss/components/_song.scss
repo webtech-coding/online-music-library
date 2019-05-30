@@ -1,0 +1,77 @@
+.song{
+    margin-left: rem(20px);
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: rem(10px) 20px;
+        cursor: pointer;
+        color: #fff;
+        margin-bottom: rem(5px);
+
+        &:hover{
+            background: rgba(#000,.2);
+            background: #343a40;
+            color: #fff;
+        }
+
+        &:hover .song__list-name{
+            color: #fff;
+        }
+
+        &:hover .song__list-dots{
+            display: block;
+        }
+        
+
+        &-icon{
+            margin-right: rem(15px);
+            color: rgba(#fff,.8);
+        }
+
+        &-name{
+            font-weight: 400;
+            font-size: rem(13px);
+            color: rgba(rgb(27, 27, 27),1);
+            text-transform: uppercase;
+            font-family: $f-primary;
+        }
+        &-menu{
+            display: flex;
+            justify-content: space-around;
+            color: rgba(#fff,.8);
+           
+            
+        }
+        &-dots{
+            position: relative;
+            margin-top: rem(-3px);
+            margin-right: rem(20px);
+            cursor: pointer;
+            display: none;
+        }
+
+        &--active{
+            transition: all .4s ease;
+            background: #8e3f3f;
+        }
+    }
+
+    &__detail{
+        margin-left: rem(32px);
+        color: rgba(#000,.6);
+    }
+
+    &__artist, &__album{
+        font-size: rem(14px);
+        color: #fff;
+        font-family: $f-primary;
+        
+        &:hover{
+            border-bottom: 1px solid rgba(#fff,.6);
+            padding-bottom: rem(5px);
+        }
+    }
+        
+}

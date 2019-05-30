@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding:0px;
+    border: 0px;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+body{
+    background:#fff;
+}
+ul>li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    outline: none;
+}
+
+textarea:focus, input:focus {
+    outline: 0;
+}
