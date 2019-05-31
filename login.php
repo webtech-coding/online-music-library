@@ -33,7 +33,11 @@
         <div class="login__form-control">
             <button type="submit" name="submit" class="login__form-submit">Submit</button>
         </div>
+        <div class="login__form-back">
+            <a href="./index.php"><span class="ti-arrow-left"> <span class="login__back--label">Home </span></a>
+        </div>
     </form>
+
 </section>
 
 </body>

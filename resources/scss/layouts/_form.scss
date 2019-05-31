@@ -2,8 +2,10 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background:linear-gradient(to top, rgba(#e2f7ec,.8), rgba(#fff,.1));
+    background:url('./../img/music_bg.jpg');
     font-family: $f-primary;
+    background-size: cover;
+
 
     &__error{
         padding:rem(8px) 0;
@@ -20,20 +22,40 @@
         left:50%;
         transform: translate(-50%,-50%);
         width: rem(400px);
-        border: 1px solid rgba(61, 61, 61,.2);
+        border: 1px solid #fff;
+        
         padding:rem(50px);
+
+        a{
+            color: #fff;
+        }
         
         &-control{
             display: block;
             padding: rem(10px) 0;
         }
 
+        &-back{
+            color: #fff;
+            margin-top: rem(15px);
+           
+            .ti-arrow-left{
+                font-size: rem(14px);
+            }
+        }
+        &__back-label{
+            display: inline-block;
+           
+           
+        }
+
         &-label{
             display: block;
-            color: #2e2e2e;
+            // color: #2e2e2e;
+            color: #fff;
             font-weight: 100;
             font-size: rem(14px);
-            margin-bottom: rem(2px);
+            margin-bottom: rem(5px);
         }
 
         &-input{
@@ -47,9 +69,11 @@
             text-transform: uppercase;
             padding-bottom: rem(5px);
             margin-bottom: rem(20px);
-            font-weight: 600;
+            font-weight: 100;
             letter-spacing: 1px;
-            font-size: rem(20px);
+            font-size: rem(32px);
+            color:#fff;
+            font-family: $f-primary;
         }
         &-submit{
             outline: none;

@@ -8,6 +8,7 @@
     <title>Music</title>
     <link rel="stylesheet" href="resources/css/main.css">
     <link rel="shortcut icon" type="image/png" href="resources/img/icon_1.png"/>
+    <link rel="stylesheet" href="/music/resources/plugin/css/themify-icons.css">
 </head>
 <body>
     <!-- <header class="header">

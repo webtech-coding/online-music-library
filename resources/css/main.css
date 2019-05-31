@@ -91,9 +91,10 @@ textarea:focus, input:focus {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to top, rgba(226, 247, 236, 0.8), rgba(255, 255, 255, 0.1));
-  font-family: "Roboto", sans-serif; }
-  /* line 8, resources/scss/layouts/_form.scss */
+  background: url("./../img/music_bg.jpg");
+  font-family: "Roboto", sans-serif;
+  background-size: cover; }
+  /* line 10, resources/scss/layouts/_form.scss */
   .login__error {
     padding: 0.5rem 0;
     text-align: center;
@@ -101,41 +102,56 @@ textarea:focus, input:focus {
     color: red;
     letter-spacing: 1px;
     font-weight: 100; }
-  /* line 17, resources/scss/layouts/_form.scss */
+  /* line 19, resources/scss/layouts/_form.scss */
   .login__form {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 25rem;
-    border: 1px solid rgba(61, 61, 61, 0.2);
+    border: 1px solid #fff;
     padding: 3.125rem; }
-    /* line 26, resources/scss/layouts/_form.scss */
+    /* line 29, resources/scss/layouts/_form.scss */
+    .login__form a {
+      color: #fff; }
+    /* line 33, resources/scss/layouts/_form.scss */
     .login__form-control {
       display: block;
       padding: 0.625rem 0; }
-    /* line 31, resources/scss/layouts/_form.scss */
+    /* line 38, resources/scss/layouts/_form.scss */
+    .login__form-back {
+      color: #fff;
+      margin-top: 0.9375rem; }
+      /* line 42, resources/scss/layouts/_form.scss */
+      .login__form-back .ti-arrow-left {
+        font-size: 0.875rem; }
+    /* line 46, resources/scss/layouts/_form.scss */
+    .login__form__back-label {
+      display: inline-block; }
+    /* line 52, resources/scss/layouts/_form.scss */
     .login__form-label {
       display: block;
-      color: #2e2e2e;
+      color: #fff;
       font-weight: 100;
       font-size: 0.875rem;
-      margin-bottom: 0.125rem; }
-    /* line 39, resources/scss/layouts/_form.scss */
+      margin-bottom: 0.3125rem; }
+    /* line 61, resources/scss/layouts/_form.scss */
     .login__form-input {
       border: 1px solid rgba(0, 0, 0, 0.2);
       padding: 0.3125rem;
       width: 100%; }
-    /* line 45, resources/scss/layouts/_form.scss */
+    /* line 67, resources/scss/layouts/_form.scss */
     .login__form-title {
       text-align: center;
       text-transform: uppercase;
       padding-bottom: 0.3125rem;
       margin-bottom: 1.25rem;
-      font-weight: 600;
+      font-weight: 100;
       letter-spacing: 1px;
-      font-size: 1.25rem; }
-    /* line 54, resources/scss/layouts/_form.scss */
+      font-size: 2rem;
+      color: #fff;
+      font-family: "Roboto", sans-serif; }
+    /* line 78, resources/scss/layouts/_form.scss */
     .login__form-submit {
       outline: none;
       padding: 0.625rem 1.25rem;
